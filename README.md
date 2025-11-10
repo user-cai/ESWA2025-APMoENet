@@ -9,7 +9,7 @@ Complete code implementation of the ESWA 2025 paper “APMoE-Net: Fourier amplit
 
 ---
 
-### Project Structure
+### 🏗️ Project Structure
 
 APMoE-Net/  
 │  
@@ -22,7 +22,7 @@ APMoE-Net/
 ├── test.py                # Testing/validation script  
 └── README.md              # Project description  
 ![Network Structure](Images/arc.png)
-### Training Data
+### 📂 Training Data
 
 The training and testing datasets used in this project include **LOLv1 infrared images**.  
 
@@ -34,10 +34,10 @@ data/
 │ └── Infra/ # infrared image  
 │ └── our485/ # train  
 
-### Experimental Results
+### 📊 Experimental Results
 ![Experimental Result](Images/res.png)
 
-### Contact
+### ✉ Contact
 
 Email: caime24@mails.jlu.edu.cn
 
