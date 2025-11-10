@@ -21,12 +21,12 @@ APMoE-Net/
 ├── train.py               # Training script  
 ├── test.py                # Testing/validation script  
 └── README.md              # Project description  
-
+![Network Structure](Images/arc.png)
 ### Training Data
 
 The training and testing datasets used in this project include **LOLv1 infrared images**.  
 
-- **Dataset URL:** [LOLv1 Infrared Dataset](https://github.com/cai-mengen/LOLv1)
+- **Dataset URL:** [LOLv1 Infrared Dataset](https://pan.quark.cn/s/d61d4b3656f9)
 - **Data organization example:**  
 data/  
 ├── LOLv1/  
@@ -35,7 +35,7 @@ data/
 │ └── our485/ # train  
 
 ### Experimental Results
-![Experimental Result](images/res.png)
+![Experimental Result](Images/res.png)
 
 ### Contact
 
