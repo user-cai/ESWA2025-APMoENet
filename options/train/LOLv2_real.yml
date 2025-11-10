@@ -1,0 +1,66 @@
+#### general settings
+name: Huawei
+use_tb_logger: false
+model: enhancement_model
+distortion: sr
+scale: 1
+gpu_ids: [0]
+
+#### datasets
+datasets:
+  train:
+    name: ll_dataset
+    interval_list: [1]
+    random_reverse: false
+    border_mode: false
+    dataroot_GT: ./data/LOLv1/our485/gt
+    dataroot_LQ: ./data/LOLv1/our485/input
+    dataroot_FR: ./data/LOLv1/Infra/train_03
+
+    n_workers: 3  # per GPU
+    batch_size: 8
+    GT_size: 256   # size you want to crop out as input sample.
+    LQ_size: 256
+    use_flip: true
+    use_rot: true
+    color: RGB
+  val:
+    name: ll_dataset
+    dataroot_GT: ./data/LOLv1/eval15/high
+    dataroot_LQ: ./data/LOLv1/eval15/low
+    dataroot_FR: ./data/LOLv1/Infra/eval_03
+    train_size: [600, 400]
+
+#### network structures
+network_G:
+  which_model_G: APMoENet
+  nf: 64 # 32 # 64
+
+#### path
+path:
+  root: ./
+  strict_load: false
+
+#### training settings: learning rate scheme, loss
+train:
+  lr_G: 0.0005
+  lr_scheme: MultiStepLR
+  beta1: 0.9
+  beta2: 0.99
+  niter: 200000
+  lr_steps: [80000, 140000, 180000]
+  ft_tsa_only: 0
+  warmup_iter: -1  # -1: no warm up
+  lr_gamma: 0.5
+  eta_min: !!float 1e-7
+  #  manual_seed: 4313
+  pixel_criterion: l1
+  pixel_weight: 1.0
+  val_freq: !!float 500
+
+  manual.resize960x512_seed: 0
+
+#### logger
+logger:
+  print_freq: 500
+  save_checkpoint_freq: !!float 1000
