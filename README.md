@@ -26,7 +26,7 @@ APMoE-Net/
 
 The training and testing datasets used in this project include **LOLv1 infrared images**.  
 
-- **Dataset URL:** [LOLv1 Infrared Dataset](https://pan.quark.cn/s/d61d4b3656f9)
+- **Infrared Dataset URL:** [Quark Cloud Drive](https://pan.quark.cn/s/d61d4b3656f9) | [Google Drive](https://drive.google.com/drive/folders/1iul-HAX2tDyww6pCxEAHdP417idcQ9IA)
 - **Data organization example:**  
 data/  
 ├── LOLv1/  
