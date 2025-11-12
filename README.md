@@ -37,6 +37,20 @@ data/
 ### 📊 Experimental Results
 ![Experimental Result](Images/res.png)
 
+### 📚 Citation
+
+If you find our work helpful, please consider citing our paper:
+
+```bibtex
+@article{cai2025apmoe,
+  title={APMoE-Net: Fourier Amplitude-Phase Joint Enhancement and MoE Compensation for Low-Light Image Enhancement},
+  author={Cai, Mengen and Zhang, Tongshun and Liu, Pingping and Zhou, Qiuzhan},
+  journal={Expert Systems with Applications},
+  pages={129664},
+  year={2025},
+  publisher={Elsevier}
+}
+```
 ### ✉ Contact
 
 Email: caime24@mails.jlu.edu.cn
