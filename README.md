@@ -1,5 +1,5 @@
 # ESWA2025-APMoENet
-Complete code implementation of the ESWA 2025 paper “APMoE-Net: Fourier amplitude-phase joint enhancement and MoE compensation for low-light image enhancement.”
+Complete code implementation of the ESWA 2025 paper “APMoE-Net: Fourier amplitude-phase joint enhancement and MoE compensation for low-light image enhancement.” [Paper Link](https://www.sciencedirect.com/science/article/abs/pii/S0957417425032798)
 
 ## Table of Contents
 - [Project Structure](#project-structure)
